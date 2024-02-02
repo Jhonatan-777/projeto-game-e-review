@@ -11,3 +11,6 @@
 /* sections */
 /* main -------------- */
 @import "./sections/main.css";
+
+/* about ------------- */
+@import "./sections/section-about.css";

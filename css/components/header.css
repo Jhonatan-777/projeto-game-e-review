@@ -23,3 +23,6 @@
   color: var(--color-title);
   font-size: var(--m);
 }
+.list-nav a {
+  padding: 5px;
+}
