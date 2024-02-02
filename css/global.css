@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-text);
+  background-color: var(--bg-color);
+}
+.title {
+  font-family: var(--font-title);
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+}
+ul {
+  list-style: none;
+}
+.limit-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}

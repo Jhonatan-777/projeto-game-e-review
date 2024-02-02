@@ -1,0 +1,28 @@
+:root {
+  /* colors */
+  --bg-color: #fff3ec;
+  --bg-header: #fff3ec;
+  --bg-footer: #1d0d22;
+  --orange: #ffa230;
+  --orange-strong: #f66616;
+  --color-title: #1d0f07;
+  --color-text: #523525;
+
+  /* font-family */
+  --font-title: "Expletus Sans", sans-serif;
+  --font-text: "Roboto", sans-serif;
+
+  /* font-size */
+  --s: 16px;
+  --m: 18px;
+  --l: 20px;
+  --xl: 32px;
+  --xxl: 40px;
+
+  /* font-weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+}

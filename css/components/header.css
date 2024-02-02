@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  background-color: var(--bg-header);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+.logo-container .logo {
+  font-family: var(--font-title);
+  color: var(--color-title);
+  font-size: var(--l);
+}
+.logo-container .logo span {
+  color: var(--orange);
+}
+.list-nav {
+  display: flex;
+  gap: 40px;
+  font-family: var(--font-title);
+  color: var(--color-title);
+  font-size: var(--m);
+}
