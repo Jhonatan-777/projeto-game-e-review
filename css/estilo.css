@@ -7,3 +7,7 @@
 /* components */
 /* header ------------ */
 @import "./components/header.css";
+
+/* sections */
+/* main -------------- */
+@import "./sections/main.css";
