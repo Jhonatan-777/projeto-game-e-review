@@ -1,0 +1,108 @@
+.highlightsgames {
+  overflow: hidden;
+  background-image: url("../../img/imagens-bg/bg-high.png");
+  background-position: center -100px;
+  background-repeat: no-repeat;
+  background-size: 4000px;
+}
+.highlights-container {
+  padding: 220px 0;
+}
+.game-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 220px;
+}
+.game-desc {
+  z-index: 1;
+  position: absolute;
+
+  top: -100px;
+  width: 420px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.desc-left {
+  background-color: var(--yellow);
+  left: 0;
+  padding: 40px 110px 40px 0;
+}
+.desc-left::before {
+  content: "";
+  position: absolute;
+  background-color: var(--yellow);
+  width: 1000px;
+  height: 300px;
+  top: 0;
+  left: -1000px;
+}
+.desc-right {
+  text-align: right;
+  background-color: var(--orange);
+  right: 0;
+  padding: 40px 0 40px 115px;
+}
+.desc-right::before {
+  content: "";
+  position: absolute;
+  background-color: var(--orange);
+  width: 1000px;
+  height: 300px;
+  top: 0;
+  right: -1000px;
+}
+.game-desc h3 {
+  font-family: var(--font-title);
+  font-size: var(--xl);
+  margin-bottom: 16px;
+  color: var(--color-title);
+}
+.desc-left .btn-highlight {
+  align-self: flex-end;
+}
+.desc-right .btn-highlight {
+  align-self: flex-start;
+}
+.game-banner {
+  position: relative;
+}
+.game-bg {
+  width: 100%;
+  height: 650px;
+}
+.game-bg img {
+  object-position: left;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.logo-starwars {
+  position: absolute;
+  width: 300px;
+  height: 230px;
+  top: 120px;
+  right: 100px;
+}
+.logo-hogwarts {
+  position: absolute;
+  width: 550px;
+  height: 190px;
+  bottom: 130px;
+  right: 270px;
+}
+.logo-starfild {
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  top: 110px;
+  right: 50px;
+}
+.logo-resident {
+  position: absolute;
+  width: 600px;
+  height: 150px;
+  bottom: 70px;
+  left: 50px;
+}

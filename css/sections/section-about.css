@@ -53,16 +53,8 @@
 }
 .btn-about {
   margin-bottom: 32px;
-  position: relative;
 }
-.btn-about::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-text);
-  bottom: -4px;
-}
+
 .list-nav-console {
   display: flex;
   flex-wrap: wrap;

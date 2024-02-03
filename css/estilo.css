@@ -14,3 +14,6 @@
 
 /* about ------------- */
 @import "./sections/section-about.css";
+
+/* highlights ------------- */
+@import "./sections/section-highlights.css";
