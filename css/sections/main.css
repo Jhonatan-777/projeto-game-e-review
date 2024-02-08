@@ -28,6 +28,7 @@
   background: var(--bg-color);
   width: 90%;
   height: 500px;
+  clip-path: polygon(0 12%, 100% 4%, 94% 93%, 8% 89%);
 }
 .banner-title {
   letter-spacing: -5px;

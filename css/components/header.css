@@ -8,21 +8,21 @@
   align-items: center;
   padding: 22px 0;
 }
-.logo-container .logo {
+.header-container .logo {
   font-family: var(--font-title);
   color: var(--color-title);
   font-size: var(--l);
 }
-.logo-container .logo span {
+.header-container .logo span {
   color: var(--orange);
 }
-.list-nav {
+.header-container .list-nav {
   display: flex;
   gap: 40px;
   font-family: var(--font-title);
   color: var(--color-title);
   font-size: var(--m);
 }
-.list-nav a {
+.header-container .list-nav a {
   padding: 5px;
 }
