@@ -1,8 +1,14 @@
 .header {
+  z-index: 1000;
   width: 100%;
   background-color: var(--bg-header);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: box-shadow 0.4s, background-color 0.4s;
 }
 .header-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,10 +25,98 @@
 .header-container .list-nav {
   display: flex;
   gap: 40px;
+}
+.nav-link {
+  padding: 5px;
+  position: relative;
   font-family: var(--font-title);
   color: var(--color-title);
   font-size: var(--m);
+  transition: color 0.3s;
 }
-.header-container .list-nav a {
-  padding: 5px;
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--orange-strong);
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.2rem;
+  transition: width 0.3s;
+}
+.nav-link:hover {
+  color: var(--orange-strong);
+}
+.nav-link:hover::after {
+  width: 25%;
+}
+
+/* Add shadow header */
+.shadow-header {
+  box-shadow: 0 1px 16px hsla(0, 0%, 0%, 0.12);
+}
+
+/* Active link*/
+.active-link {
+  color: var(--orange-strong);
+}
+.active-link::after {
+  width: 25%;
+}
+
+.list-nav-close,
+.list-nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: hsla(33, 57%, 53%, 0.919);
+    width: 100%;
+    padding-block: 5rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: top 0.4s;
+  }
+  .show-menu {
+    top: 0;
+  }
+  .nav-link::after {
+    background-color: var(--white);
+  }
+  .nav-link:hover {
+    color: var(--white);
+  }
+  /* Active link*/
+  .active-link {
+    color: var(--white);
+  }
+
+  .list-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .list-nav-close {
+    display: block;
+    color: var(--white);
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+  .list-nav-toggle {
+    width: 32px;
+    height: 32px;
+    background-color: var(--orange);
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
 }

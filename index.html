@@ -23,23 +23,30 @@
     <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="limit-container header-container">
         <div class="logo-container">
-          <a href="./" class="logo">Game<span>&</span>Review</a>
+          <a href="#inicio" class="logo">Game<span>&</span>Review</a>
         </div>
 
-        <nav>
+        <nav class="nav-menu" id="nav-menu">
           <ul class="list-nav">
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Top Games</a></li>
-            <li><a href="#">Analises</a></li>
+            <li><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li><a class="nav-link" href="#analise">Analises</a></li>
+            <li><a class="nav-link" href="#topgames">Top Games</a></li>
           </ul>
+          <!-- Close button -->
+          <div class="list-nav-close" id="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
         </nav>
+        <div class="list-nav-toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="inicio">
       <div class="bg-home">
         <video src="./img/video/bg-home.mp4" autoplay muted loop></video>
       </div>
@@ -51,7 +58,7 @@
       </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="sobre">
       <div class="limit-container about-container">
         <div class="about-desc">
           <h2 class="title">Quem Somos</h2>
@@ -113,7 +120,7 @@
       </div>
     </section>
 
-    <section class="highlightsgames">
+    <section class="highlightsgames" id="analise">
       <div class="limit-container highlights-container">
         <div class="game-container">
           <div class="game-desc desc-left">
@@ -235,7 +242,7 @@
       </div>
     </section>
 
-    <section class="topgames">
+    <section class="topgames" id="topgames">
       <div class="limit-container topgames-container">
         <h2 class="title">Top Games G&R</h2>
         <p class="paragraph">
@@ -356,9 +363,9 @@
       </div>
       <div class="footer-content limit-container">
         <div class="logo-container">
-          <a href="./" class="logo">Game<span>&</span>Review</a>
+          <a href="#inicio" class="logo">Game<span>&</span>Review</a>
         </div>
-        <nav>
+        <nav class="footer-links">
           <ul class="list-nav">
             <li><a href="#">Sobre Nós</a></li>
             <li><a href="#">Termos de Serviço</a></li>
