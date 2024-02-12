@@ -30,6 +30,12 @@ ul {
   max-width: 1160px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1200px) {
+  .limit-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .btn {
   font-weight: var(--semibold);
   color: var(--color-text);
