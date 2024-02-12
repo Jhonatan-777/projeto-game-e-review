@@ -23,3 +23,7 @@
 
 /* topgames ------------- */
 @import "./sections/section-topgames.css";
+
+/* pages */
+/* analise ------------- */
+@import "./pages/analise.css";

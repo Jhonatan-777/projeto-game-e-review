@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   transition: box-shadow 0.4s, background-color 0.4s;
+  height: var(--header-height);
 }
 .header-container {
   position: relative;
@@ -95,7 +96,7 @@
     color: var(--white);
   }
 
-  .list-nav {
+  .header-container .list-nav {
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
